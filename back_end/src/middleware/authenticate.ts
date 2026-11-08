@@ -2,7 +2,7 @@ import type { Request, Response, NextFunction } from "express";
 
 import { jwtVerify } from "jose";
 
-import { env } from "../config/env.js";
+import { env } from "../../config/env.js";
 import { AppError } from "../shared/errors/app-error.js";
 
 const secret = new TextEncoder().encode(env.JWT_SECRET);
