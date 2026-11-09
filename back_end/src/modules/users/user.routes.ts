@@ -4,7 +4,7 @@ import {
   authenticate,
   type AuthRequest,
 } from "../../middleware/authenticate.js";
-import { prisma } from "../../../config/database.js";
+import { prisma } from "../../config/database.js";
 
 const router = Router();
 

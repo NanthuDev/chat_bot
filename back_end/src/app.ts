@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 
-import { env } from "../config/env.js";
+import { env } from "./config/env.js";
 import { errorHandler } from "./middleware/error-handler.js";
 
 import authRoutes from "./modules/auth/auth.routes.js";

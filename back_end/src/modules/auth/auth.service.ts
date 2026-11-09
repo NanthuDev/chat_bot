@@ -1,8 +1,8 @@
 import argon2 from "argon2";
 import { SignJWT } from "jose";
 
-import { prisma } from "../../../config/database.js";
-import { env } from "../../../config/env.js";
+import { prisma } from "../../config/database.js";
+import { env } from "../../config/env.js";
 import { AppError } from "../../shared/errors/app-error.js";
 
 const jwtSecret = new TextEncoder().encode(env.JWT_SECRET);

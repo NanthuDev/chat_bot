@@ -1,4 +1,4 @@
-import { prisma } from "../../../config/database.js";
+import { prisma } from "../../config/database.js";
 
 export async function createConversation(userId: string, title?: string) {
   return prisma.conversation.create({
