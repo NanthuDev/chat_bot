@@ -7,7 +7,7 @@ import { errorHandler } from "./middleware/error-handler.js";
 
 import authRoutes from "./modules/auth/auth.routes.js";
 import userRoutes from "./modules/users/user.routes.js";
-
+import conversationRoutes from "./modules/conversations/conversation.routes.js";
 const app = express();
 
 // Security middleware
@@ -33,6 +33,7 @@ app.get("/api/v1/health", (_req, res) => {
 // API routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/conversations", conversationRoutes);
 
 // 404 handler
 app.use((_req, res) => {
